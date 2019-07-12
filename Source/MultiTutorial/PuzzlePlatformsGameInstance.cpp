@@ -19,6 +19,7 @@ UPuzzlePlatformsGameInstance::UPuzzlePlatformsGameInstance(const FObjectInitiali
 	if (!ensure(PlatformTriggerBPClass.Class != nullptr)) return;
 
 	UE_LOG(LogTemp, Warning, TEXT("Found class %s"), *PlatformTriggerBPClass.Class->GetName());
+	UE_LOG(LogTemp, Warning, TEXT("TESTING GIT CMD %s"), *PlatformTriggerBPClass.Class->GetName());
 
 	// find Main Menu BP for game instance
 	ConstructorHelpers::FClassFinder<UUserWidget> MenuBPClass(TEXT("/Game/MenuSystem/WBP_MainMenu"));
